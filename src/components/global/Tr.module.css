@@ -1,0 +1,28 @@
+tr {
+  height: 60px;
+}
+tr .childrenn {
+  display: flex !important;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+}
+tr td {
+  border-bottom: 1px solid var(--placeholder-color);
+  font-size: 20px;
+  color: var(--p-color);
+  white-space: nowrap;
+}
+
+tr td a {
+  text-decoration: none;
+  font-size: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+tr td a i {
+  font-size: 20px;
+}

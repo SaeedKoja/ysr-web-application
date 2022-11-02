@@ -1,0 +1,129 @@
+.LastPerson {
+  width: 80%;
+  height: calc(100vh - 102px);
+}
+.LastPerson .LastPeContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-top: 40px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  direction: rtl;
+}
+.LastPerson .LastPeContent .logoText {
+  display: flex;
+  align-items: center;
+  direction: ltr;
+  justify-content: flex-end;
+}
+.LastPerson .LastPeContent .logoText i,
+.LastPerson .LastPeContent .logoText h4 {
+  font-size: 35px;
+  color: var(--p-color);
+  padding: 0 10px;
+}
+.LastPerson .LastPeContent .searshPe {
+  display: flex;
+  position: relative;
+}
+.LastPerson .LastPeContent .searshPe input {
+  position: relative;
+  width: 100%;
+  height: 49px;
+  background: transparent;
+  border: 1px solid var(--p-color);
+  border-radius: 50px;
+  padding: 5px 50px 5px 10px;
+  color: var(--h-color);
+  font-size: 25px;
+}
+.LastPerson .LastPeContent .searshPe input:focus {
+  outline: none;
+}
+.LastPerson .LastPeContent .searshPe i {
+  position: absolute;
+  font-size: 25px;
+  color: var(--p-color);
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+.LastPerson .LastPeContent .sortPe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 49px;
+}
+.LastPerson .LastPeContent .sortPe i {
+  font-size: 30px;
+  color: var(--p-color);
+  cursor: pointer;
+}
+.LastPerson .LastPeContent .logoText.width,
+.LastPerson .LastPeContent .searshPe.width,
+.LastPerson .LastPeContent .sortPe.width {
+  width: 100%;
+}
+.LastPerson table {
+  width: 95%;
+  text-align: center;
+  overflow: auto;
+  margin: 0 auto;
+  direction: rtl;
+  border-collapse: collapse;
+}
+.LastPerson table thead {
+  position: sticky;
+  top: 0;
+  background: black;
+}
+.LastPerson table thead th {
+  font-size: 25px;
+  font-weight: normal;
+}
+.LastPerson table tr:nth-child(even) {
+  background-color: var(--post-background-color);
+}
+.LastPerson table tr {
+  height: 60px;
+}
+.LastPerson table th {
+  border-bottom: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 22px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 15px;
+  color: var(--h-color);
+  border-bottom: 1px solid var(--placeholder-color);
+}
+.LastPerson table td {
+  border-bottom: 1px solid var(--placeholder-color);
+  font-size: 20px;
+  color: var(--p-color);
+  white-space: nowrap;
+}
+.LastPerson table tbody tr .children {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+.LastPerson table tbody tr td a {
+  text-decoration: none;
+  font-size: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LastPerson table tbody tr td a i {
+  font-size: 20px;
+}

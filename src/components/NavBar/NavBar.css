@@ -1,0 +1,89 @@
+.SideBar {
+  height: 100%;
+  width: 20%;
+  background-color: var(--post-background-color);
+  position: fixed;
+  right: 0;
+  direction: rtl;
+  box-shadow: 5px 15px 20px rgba(0 , 0 , 0 , 0.7);
+}
+.SideBar .Side-logo {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.SideBar hr {
+  border-radius: 50%;
+  width: 80%;
+  margin: 0 auto;
+}
+.SideBar .Side-logo img {
+  width: 30px;
+}
+.SideBar .Side-logo h2 {
+  color: var(--h-color);
+}
+.SideBar .Side-Nav {
+  list-style: none;
+  margin-top: 40px;
+}
+.SideBar .Side-Nav .list li {
+  cursor: pointer;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e4e6eb40;
+  transition-delay: 1s;
+  position: relative;
+  user-select: none;
+}
+.SideBar .Side-Nav ul li.ul {
+  list-style: none;
+  /* padding: 10px 20px; */
+  display: none;
+}
+.SideBar .Side-Nav ul li.ul.show {
+  display: block;
+}
+.SideBar .Side-Nav ul li.ul li {
+  /* padding: 10px 50px 15px 10px; */
+  border-right: 1px solid #e4e6eb40;
+  border-bottom: none;
+  padding: 10px 20px;
+  transition: 0.4s;
+  white-space: nowrap;
+}
+.SideBar .Side-Nav ul li.ul li:hover{
+  padding: 10px 40px;
+  white-space: nowrap;
+}
+.SideBar .Side-Nav ul li.ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.SideBar .Side-Nav ul li.ul li a i {
+  font-size: 20px;
+}
+.SideBar .Side-Nav ul li.ul li a p {
+  font-size: 20px;
+}
+.SideBar .Side-Nav ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.SideBar .Side-Nav ul li i {
+  color: var(--p-color);
+  font-size: 30px;
+}
+.SideBar .Side-Nav ul li p {
+  color: var(--p-color);
+  font-size: 25px;
+  flex: 1;
+  padding: 0 35px;
+}

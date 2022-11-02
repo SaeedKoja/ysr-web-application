@@ -1,0 +1,172 @@
+.edit {
+  width: 80%;
+}
+.row {
+  width: 95%;
+  margin-top: 40px;
+  height: calc(100vh - 112px);
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+.row .form-group {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+}
+.row .form-group .child {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 5px;
+  align-items: center;
+}
+.edit .row .form-group .child .imgcontent {
+  display: flex;
+  position: relative;
+}
+.edit .row .form-group .child .imgcontent .srcImg {
+  position: absolute;
+  z-index: 2;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  width: 218px;
+  text-align: center;
+  color: var(--p-color);
+  background-color: var(--main-color);
+  border-radius: 20px;
+}
+.row .form-group .child select {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #666;
+  color: silver;
+  background: transparent;
+  font-size: 18px;
+}
+.edit .row .form-group .child input {
+  height: 45px;
+  background-color: transparent;
+  border-radius: 10px;
+  width: 100%;
+  padding: 5px 15px;
+  border: 1px solid #666;
+  color: #fff;
+  font-size: 20px;
+  direction: rtl;
+  position: relative;
+}
+.row .form-group .child input:focus {
+  outline: none;
+}
+.row .form-group .child .GePe {
+  right: 15px;
+  position: absolute;
+  transition: 0.3s;
+  top: -12px;
+  color: silver;
+}
+.row .form-group .child select:focus ~ .GePe,
+.row .form-group .child select:valid ~ .GePe {
+  top: -14px;
+  font-size: 13px;
+  color: silver;
+  background-color: #18191a;
+  padding: 0 10px;
+  font-size: 18px;
+}
+.row .form-group .child .top-top {
+  right: 15px;
+  position: absolute;
+  transition: 0.3s;
+  top: 5px;
+  color: silver;
+}
+.row .form-group .child input:focus ~ .top-top,
+.row .form-group .child input:valid ~ .top-top {
+  top: -14px;
+  font-size: 13px;
+  color: silver;
+  background-color: #18191a;
+  padding: 0 10px;
+  font-size: 18px;
+}
+.row .form-group .child .text-danger {
+  bottom: -25px;
+  color: brown;
+  font-size: 20px;
+  width: 100%;
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  display: none;
+  margin-top: 5px;
+}
+.row .btnSubmit {
+  display: flex;
+  direction: rtl;
+  /* justify-content: center; */
+  align-items: center;
+}
+.edit .row .btnSubmit button {
+  padding: 5px 60px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  color: var(--p-color);
+  font-size: 25px;
+}
+.edit .row .btnSubmit a {
+  padding: 5px 60px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  color: var(--p-color);
+  font-size: 25px;
+  text-decoration: none;
+}
+.edit .row .btnSubmit button:first-child {
+  background-color: #ff9a00 !important;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+.edit .row .btnSubmit a {
+  border: 2px solid darkgray;
+  background-color: transparent;
+}
+.swal-modal {
+  background-color: var(--post-background-color);
+  border-radius: 20px;
+  color: var(--p-color);
+}
+/* .swal-text {
+  background-color: black;
+  font-size: 40px;
+} */
+.swal-icon--success::before {
+  background-color: transparent !important;
+}
+.swal-icon--success::after {
+  background-color: transparent !important;
+}
+.swal-icon--success__hide-corners {
+  display: none;
+}
+.swal-title:not(:last-child) {
+  margin-bottom: 13px;
+  font-size: 40px;
+  color: var(--p-color);
+  font-family: "Sakkal Majalla", sans-serif;
+  margin-bottom: 80px;
+}
+.swal-footer {
+  display: none;
+}
